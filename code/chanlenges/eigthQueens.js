@@ -20,6 +20,34 @@ Output:"(5,3)"
 
 
 function EightQueens(strArr) { 
+
+	let resultado = false;
+
+	strArr.forEach((element,index) => {
+
+			console.log(element.charAt(1));
+	
+	if (!resultado){ //hacia arriba 
+		for (i = 1; i < 9 ; i++){
+			console.log(i + "igual a " + element.charAt(1) + "y el indice :" + index)
+			if ( i == element.charAt(1) &&	i != (index + 1) && resultado == false){
+			
+				resultado = true;			
+			}
+		}
+			
+		for (i = 1; i < 9 ; i++){
+			console.log(i + "igual a " + element.charAt(1) + "y el indice :" + index)
+			if ( i == element.charAt(3) &&	i != (index + 1) && resultado == false){
+			
+				resultado = true;			
+			}
+		}
+
+	}
+		
+	
+	});
 /*
     por cada tupla
 	If (no_hay_nada)
@@ -35,7 +63,11 @@ function EightQueens(strArr) {
 end
 
 */
-    return strArr; 
-           
+    //return strArr; 
+	console.log(resultado);
+		 
   }
-     
+	 
+  var a = ["(2,1)", "(1,2)" , "(4,3)", "(6,3)", "(8,4)", "(3,4)", "(1,6)", "(7,7)", "(5,8)"];
+
+  console.log(EightQueens(a));

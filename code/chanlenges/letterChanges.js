@@ -53,6 +53,6 @@ function LetterChanges(str) {
 
   
 
-  console.log(LetterChanges("fun times!"));
+  console.log(LetterChanges("a confusing /:sentence:/[ this is not!!!!!!!~"));
 
  
